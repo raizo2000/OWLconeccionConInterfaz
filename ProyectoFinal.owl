@@ -1,0 +1,628 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#"
+     xml:base="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-13="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Punt_aprobacion -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Punt_aprobacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Carreras"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Resultado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Realiza_un -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Realiza_un">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#es_rendido_por"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#elegidas_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#elegidas_por">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#seleccionadas_por"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Carreras"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#es_rendido_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#es_rendido_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#esta_en -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#esta_en">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#tieneCarreras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Carreras"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#gana_una -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#gana_una">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#selecciona_a"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Postulacion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#ingresan_los -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#ingresan_los">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#ingresan_por"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#ingresan_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#ingresan_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#ingresen_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#ingresen_a">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#permite_ingreso"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#obtiene_un -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#obtiene_un">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Resultado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#permite_ingreso -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#permite_ingreso">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#realiza_una -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#realiza_una">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#realizadas_por"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Inscripcion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#realizadas_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#realizadas_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Inscripcion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#selecciona_a -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#selecciona_a">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Postulacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#seleccionadas_por -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#seleccionadas_por">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Carreras"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#tieneCarreras -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#tieneCarreras">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Carreras"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#aprobacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#aprobacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Postulacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#calificacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#calificacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Resultado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#cedula -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#cedula">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#ciudad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#ciudad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#especialidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#especialidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#estado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#estado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#fecha -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#fecha">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Inscripcion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Postulacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Carreras"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Postulacion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#periodo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#periodo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Postulacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirantes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Carreras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Carreras"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Inscripcion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Inscripcion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Postulacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Postulacion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Resultado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Resultado"/>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante1">
+        <Realiza_un rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen1"/>
+        <gana_una rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#postulacion1"/>
+        <ingresan_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso1"/>
+        <ingresen_a rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad1"/>
+        <obtiene_un rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado1"/>
+        <realiza_una rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Incripcion1"/>
+        <seleccionadas_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera1"/>
+        <cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0123456709</cedula>
+        <especialidad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachillerato Unificado</especialidad>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graduado</estado>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andres</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante2">
+        <Realiza_un rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen1"/>
+        <gana_una rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#postulacion1"/>
+        <ingresan_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso1"/>
+        <ingresen_a rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad2"/>
+        <obtiene_un rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado2"/>
+        <realiza_una rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Incripcion1"/>
+        <seleccionadas_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera2"/>
+        <cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0123456709</cedula>
+        <especialidad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachillerato Unificado</especialidad>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graduado</estado>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maria</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante3">
+        <Realiza_un rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen2"/>
+        <gana_una rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#postulacion1"/>
+        <ingresan_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso2"/>
+        <ingresen_a rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad3"/>
+        <obtiene_un rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado3"/>
+        <realiza_una rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Incripcion1"/>
+        <seleccionadas_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera3"/>
+        <cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0123456709</cedula>
+        <especialidad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachillerato Tecnico</especialidad>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graduado</estado>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jose</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante4">
+        <Realiza_un rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen2"/>
+        <gana_una rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#postulacion2"/>
+        <ingresan_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso3"/>
+        <ingresen_a rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad3"/>
+        <obtiene_un rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado4"/>
+        <realiza_una rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Incripcion1"/>
+        <seleccionadas_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera4"/>
+        <cedula rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0123456709</cedula>
+        <especialidad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bachillerato Tecnico</especialidad>
+        <estado rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Graduado</estado>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pepe</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen1">
+        <es_rendido_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante1"/>
+        <es_rendido_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante2"/>
+        <fecha rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17/03/2022</fecha>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ser Bachiller</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Examen2">
+        <es_rendido_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante3"/>
+        <es_rendido_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante4"/>
+        <fecha rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17/03/2022</fecha>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Examen Interno</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Incripcion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Incripcion1">
+        <realizadas_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante1"/>
+        <realizadas_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante2"/>
+        <realizadas_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante3"/>
+        <realizadas_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante4"/>
+        <fecha rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10/2/2021</fecha>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso1">
+        <ingresan_los rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante1"/>
+        <ingresan_los rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante2"/>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</id>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Directo</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso2">
+        <ingresan_los rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante3"/>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</id>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curso de Nivelacion Intensivo</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Ingreso3">
+        <ingresan_los rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante4"/>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</id>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Curso de Nivelacion Regular</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad1">
+        <tieneCarreras rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera1"/>
+        <ciudad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quito</ciudad>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</id>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Espe</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad2">
+        <tieneCarreras rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera2"/>
+        <ciudad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quito</ciudad>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</id>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Universidad Central</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad3">
+        <tieneCarreras rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera3"/>
+        <tieneCarreras rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera4"/>
+        <ciudad rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quito</ciudad>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3</id>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Universidad catolica</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera1">
+        <Punt_aprobacion rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado1"/>
+        <elegidas_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante1"/>
+        <esta_en rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad1"/>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingenieria en Software</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera2">
+        <Punt_aprobacion rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado4"/>
+        <elegidas_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante2"/>
+        <esta_en rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad2"/>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diseño Grafico</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera3">
+        <Punt_aprobacion rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado2"/>
+        <elegidas_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante3"/>
+        <esta_en rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad3"/>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ingenieria Electronica</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#carrera4">
+        <Punt_aprobacion rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado3"/>
+        <elegidas_por rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante4"/>
+        <esta_en rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Universidad3"/>
+        <nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cine</nombre>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#postulacion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#postulacion1">
+        <selecciona_a rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante1"/>
+        <selecciona_a rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante2"/>
+        <selecciona_a rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante3"/>
+        <aprobacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">si</aprobacion>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</id>
+        <periodo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-2022</periodo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#postulacion2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#postulacion2">
+        <selecciona_a rdf:resource="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#Aspirante4"/>
+        <aprobacion rdf:datatype="http://www.w3.org/2001/XMLSchema#string">no</aprobacion>
+        <id rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</id>
+        <periodo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-2022</periodo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado1">
+        <calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">180</calificacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado2">
+        <calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">190</calificacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado3">
+        <calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">160</calificacion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/rhyzard/ontologies/2021/2/untitled-ontology-13#resultado4">
+        <calificacion rdf:datatype="http://www.w3.org/2001/XMLSchema#int">150</calificacion>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
